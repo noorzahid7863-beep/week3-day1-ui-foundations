@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 - Day 1: UI Foundations & Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Semantic Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <h1 class="logo">UI Foundations</h1>
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#topics">Topics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <h2>Semantic HTML, Accessibility & CSS Layouts</h2>
+            <p>Day 1 hands-on implementation for Full-Stack Engineering Roadmap (Week 3).</p>
+            <a href="#topics" class="btn-primary" role="button">Explore Covered Topics</a>
+        </section>
+
+        <!-- Feature Grid Section (CSS Grid) -->
+        <section id="features" class="features-section">
+            <h3 class="section-title">Core Competencies Covered Today</h3>
+            <div class="grid-container">
+                
+                <article class="card">
+                    <h4>1. Semantic HTML5</h4>
+                    <p>Using native tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> for clear document hierarchy.</p>
+                </article>
+
+                <article class="card">
+                    <h4>2. Web Accessibility (a11y)</h4>
+                    <p>Implementing ARIA labels, focus states, alt text for images, and logical keyboard navigation for all users.</p>
+                </article>
+
+                <article class="card">
+                    <h4>3. CSS Layout Mechanics</h4>
+                    <p>Mastering Box Model spacing, Flexbox single-axis alignment, and multi-column CSS Grid responsive designs.</p>
+                </article>
+
+                <article class="card">
+                    <h4>4. Responsive Breakpoints</h4>
+                    <p>Designing mobile-first layouts using custom media queries to seamlessly adapt across mobile, tablet, and desktop viewports.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Topics Detailed Section (Flexbox) -->
+        <section id="topics" class="topics-section">
+            <h3 class="section-title">Day 1 Learning Breakdown</h3>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <h5>Flexbox Layout</h5>
+                    <p>Used for component-level alignment, navigation bars, and flexible directional flows.</p>
+                </div>
+                <div class="flex-item">
+                    <h5>CSS Grid Layout</h5>
+                    <p>Used for macro-page layouts, dynamic responsive cards, and two-dimensional alignment.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Semantic Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Noor Zahid — Full-Stack Engineering Roadmap (Week 3 - Day 1)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
