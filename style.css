@@ -57,13 +57,19 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    border-radius: 4px;
+    padding: 2px 6px;
 }
 
-.main-nav a:hover,
-.main-nav a:focus {
+/* Accessibility: Focus-Visible State for Navigation Links */
+.main-nav a:focus-visible {
+    outline: 3px solid #00a8ff;
+    outline-offset: 3px;
     color: #00a8ff;
-    outline: 2px solid #00a8ff;
-    outline-offset: 4px;
+}
+
+.main-nav a:hover {
+    color: #00a8ff;
 }
 
 /* ==========================================================================
@@ -90,13 +96,21 @@ body {
     background-color: #1b365d;
     color: #ffffff;
     text-decoration: none;
+    border: none;
     border-radius: 5px;
     font-weight: 600;
+    cursor: pointer;
     transition: background 0.3s;
 }
 
 .btn-primary:hover {
     background-color: #005691;
+}
+
+/* Accessibility: Focus-Visible for Buttons and Primary Links */
+.btn-primary:focus-visible {
+    outline: 3px solid #00a8ff;
+    outline-offset: 3px;
 }
 
 .section-title {
@@ -132,10 +146,23 @@ body {
 }
 
 /* ==========================================================================
-   5. Flexbox Layout (Topics)
+   5. Flexbox Layout & Image (Topics)
    ========================================================================== */
 .topics-section {
     margin-bottom: 40px;
+}
+
+.topic-image-wrapper {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.topic-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .flex-container {
@@ -152,8 +179,28 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+.flex-item h4 {
+    color: #005691;
+    margin-bottom: 8px;
+}
+
 /* ==========================================================================
-   6. Mobile-First Responsive Breakpoints
+   6. Contact Section
+   ========================================================================== */
+.contact-section {
+    margin-bottom: 40px;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* ==========================================================================
+   7. Mobile-First Responsive Breakpoints
    ========================================================================== */
 /* Tablet Breakpoint */
 @media (min-width: 600px) {

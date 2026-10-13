@@ -30,7 +30,8 @@
         <section id="home" class="hero-section">
             <h2>Semantic HTML, Accessibility & CSS Layouts</h2>
             <p>Day 1 hands-on implementation for Full-Stack Engineering Roadmap (Week 3).</p>
-            <a href="#topics" class="btn-primary" role="button">Explore Covered Topics</a>
+            <!-- Removed invalid role="button" from anchor link -->
+            <a href="#topics" class="btn-primary">Explore Covered Topics</a>
         </section>
 
         <!-- Feature Grid Section (CSS Grid) -->
@@ -64,15 +65,34 @@
         <!-- Topics Detailed Section (Flexbox) -->
         <section id="topics" class="topics-section">
             <h3 class="section-title">Day 1 Learning Breakdown</h3>
+            
+            <!-- Added Image with descriptive alt attribute -->
+            <div class="topic-image-wrapper">
+                <img src="https://via.placeholder.com/800x350" alt="Illustration showing CSS Grid and Flexbox UI components" class="topic-img">
+            </div>
+
             <div class="flex-container">
                 <div class="flex-item">
-                    <h5>Flexbox Layout</h5>
+                    <!-- Corrected heading hierarchy: changed h5 to h4 -->
+                    <h4>Flexbox Layout</h4>
                     <p>Used for component-level alignment, navigation bars, and flexible directional flows.</p>
                 </div>
                 <div class="flex-item">
-                    <h5>CSS Grid Layout</h5>
+                    <!-- Corrected heading hierarchy: changed h5 to h4 -->
+                    <h4>CSS Grid Layout</h4>
                     <p>Used for macro-page layouts, dynamic responsive cards, and two-dimensional alignment.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Added #contact section -->
+        <section id="contact" class="contact-section">
+            <h3 class="section-title">Get in Touch</h3>
+            <div class="contact-card">
+                <p>Have questions about today's UI components layout or accessibility standards?</p>
+                <form class="contact-form" action="#" method="post" onsubmit="return false;">
+                    <button type="submit" class="btn-primary">Contact Support</button>
+                </form>
             </div>
         </section>
 

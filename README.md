@@ -1,22 +1,28 @@
 # Week 3 - Day 1: UI Foundations & Responsive Layout
 
 ## Overview
-This repository contains the Day 1 technical implementation for Week 3 of the Full-Stack Engineering Roadmap. It covers Semantic HTML5 architecture, Web Accessibility (a11y) standards, CSS Layout Engines (Flexbox & CSS Grid), and mobile-first responsive breakpoints.
+This repository contains the hands-on implementation for Week 3 - Day 1 of the Full-Stack Engineering Roadmap. It focuses on core semantic HTML structure, web accessibility best practices (a11y), CSS Grid/Flexbox layout mechanics, and mobile-first responsive breakpoints.
 
 ## Participant Details
 * **Participant:** Noor Zahid
 * **Mentor / Reviewer:** Muhammad Zeeshan
-* **Module:** Week 3 — UI Foundations (Day 1)
+* **Module:** Week 3 – Day 1 (UI Foundations & Responsive Layout)
 
-## Covered Concepts & Features
-1. **Semantic HTML5:** Built using `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, and `<footer>`.
-2. **Web Accessibility (a11y):** ARIA attributes, explicit focus states, accessible button targets, and logical heading hierarchies.
-3. **CSS Layout Mechanics:**
-   - **Box Model:** Global `border-box` sizing reset.
-   - **Flexbox:** Navigation bar alignment and flexible section layouts.
-   - **CSS Grid:** 4-column responsive feature grid.
-4. **Responsive Breakpoints:** Mobile-first architecture scaling seamlessly at `600px` (Tablet) and `900px` (Desktop).
+## Implemented Features & Technical Updates
+* **Semantic HTML Structure:** Built a logical document outline using `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>`.
+* **Correct Heading Hierarchy:** Maintained proper heading order (`h1` -> `h2` -> `h3` -> `h4`) without skipping levels to preserve document accessibility.
+* **Accessible Image Integration:** Added illustrative media with explicit, descriptive `alt` text.
+* **Anchor & Button Semantics:** Removed invalid `role="button"` attributes from anchor tags (`<a>`) to distinguish navigation links from actionable buttons.
+* **Focus States & Accessibility:** Implemented CSS `:focus-visible` outline styling across interactive elements for improved keyboard navigation.
+* **Contact Section:** Created a dedicated `#contact` section integrated into the main document layout.
+* **CSS Layout Engines:** Combined CSS Grid for multi-column feature cards and Flexbox for component alignment with mobile-first media queries (`600px` and `900px`).
+
+## Daily Reflection & Challenges
+Today's implementation highlighted two primary technical takeaways and challenges:
+1. Understanding why applying `role="button"` to standard anchor tags (`<a>`) causes accessibility conflicts, as links serve navigation purposes while buttons handle inline page actions.
+2. Carefully structuring the document heading levels (`h3` followed directly by `h4`) and configuring CSS `:focus-visible` pseudo-classes to ensure full keyboard navigation compliance.
 
 ## How to Run Locally
-1. Clone this repository.
-2. Open `index.html` in any web browser.
+* Clone this repository:
+  `git clone https://github.com/noorzahid7863-beep/week3-day1-ui-foundations.git`
+* Open `index.html` in your browser or run via VS Code Live Server.
